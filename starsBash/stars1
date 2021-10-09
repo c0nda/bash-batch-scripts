@@ -1,0 +1,8 @@
+str=
+star=*
+
+for (( i=1; i<=$1; i++ ))
+do
+        str+="$star"
+        echo "$str"
+done
