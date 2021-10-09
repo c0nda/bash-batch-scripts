@@ -1,0 +1,16 @@
+str=
+star=*
+
+for (( i=1; i<=$1; i++ ))
+do
+	for (( j=$1-$i+1; j>=1; j-- ))
+	do
+		str+=" "
+	done
+	for (( m=1; m<=$i; m++ ))
+	do
+		str+=$star
+	done
+	echo "$str"
+	str=
+done
